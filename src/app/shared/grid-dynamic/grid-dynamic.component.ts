@@ -61,9 +61,6 @@ export class GridDynamicComponent implements OnInit {
     //   { "lenguaje": 'C#', "framework": "Entity Framework" }
     // ];
 
-    // console.log(this.columnaCursos);
-    // console.log(this.cursos);
-
     //this.rowData = this.http.get('https://api.myjson.com/bins/15psn9');
     
     //DATOS - 1

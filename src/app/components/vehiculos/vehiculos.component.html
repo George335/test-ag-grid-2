@@ -1,0 +1,13 @@
+<!-- <button (click)="getSelectedRows()">Get Selected Rows</button>
+
+<ag-grid-angular
+    #agGrid
+    style="width: 500px; height: 500px;"
+    class="ag-theme-balham"
+    [rowData]="vehiculos"
+    [columnDefs]="columnaVehiculos"
+    rowSelection="multiple"
+    >
+</ag-grid-angular> -->
+
+<app-grid-dynamic [objFilas]="vehiculos" [objColumnas]="columnaVehiculos"></app-grid-dynamic>

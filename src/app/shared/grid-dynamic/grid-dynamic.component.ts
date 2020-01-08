@@ -1,15 +1,19 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 import { AgGridAngular } from 'ag-grid-angular';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-grid-dynamic',
+  templateUrl: './grid-dynamic.component.html',
+  styleUrls: ['./grid-dynamic.component.css']
 })
-export class AppComponent implements OnInit {
+export class GridDynamicComponent implements OnInit {
+
   @ViewChild('agGrid',null) agGrid: AgGridAngular;
+
+  @Input() objFilas: any;
+  @Input() objColumnas: any;
 
   title = 'app';
 
@@ -37,11 +41,14 @@ export class AppComponent implements OnInit {
   // ];
 
   constructor(private http: HttpClient) {
-
+    // console.log(this.objFilas);
+    // console.log(this.objColumnas);
   }
 
   ngOnInit() {
 
+    console.log(this.objFilas);
+    console.log(this.objColumnas);
 
     // this.vehiculos = [
     //   { "marca": 'Toyota', "modelo": "Yaris" },

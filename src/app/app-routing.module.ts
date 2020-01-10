@@ -16,6 +16,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { Component } from '@angular/core';
 import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { LenguajesComponent } from './components/lenguajes/lenguajes.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { DepartamentosComponent } from './components/departamentos/departamentos.component';
 // import { HomeComponent } from './components/home/home.component';
 // import { AboutComponent } from './components/about/about.component';
 // import { HeroesComponent } from './components/heroes/heroes.component';
@@ -24,6 +26,8 @@ import { LenguajesComponent } from './components/lenguajes/lenguajes.component';
 const APP_ROUTES: Routes = [
     { path: 'vehiculos', component: VehiculosComponent },
     { path: 'lenguajes', component: LenguajesComponent },
+    { path: 'usuarios', component: UsuarioComponent },
+    { path: 'departamentos', component: DepartamentosComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'vehiculos' }
 ];
 

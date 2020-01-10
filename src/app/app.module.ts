@@ -13,6 +13,8 @@ import { GridDynamicComponent } from './shared/grid-dynamic/grid-dynamic.compone
 import { APP_ROUTING } from './app-routing.module';
 import { VehiculosComponent } from './components/vehiculos/vehiculos.component';
 import { LenguajesComponent } from './components/lenguajes/lenguajes.component';
+import { UsuarioComponent } from './components/usuario/usuario.component';
+import { DepartamentosComponent } from './components/departamentos/departamentos.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LenguajesComponent } from './components/lenguajes/lenguajes.component';
     NavComponent,
     GridDynamicComponent,
     VehiculosComponent,
-    LenguajesComponent
+    LenguajesComponent,
+    UsuarioComponent,
+    DepartamentosComponent
   ],
   imports: [
     BrowserModule,
